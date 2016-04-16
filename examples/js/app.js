@@ -1,11 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactComponent from '../../src';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import ReactComponent from '../../src'
+import styles from '../scss/app.scss'
 
 class Example extends React.Component {
   render() {
     return (
-      <ReactComponent />
+      <div>
+        example!
+        <ReactComponent />
+      </div>
     );
   }
 }

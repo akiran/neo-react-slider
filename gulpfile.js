@@ -4,7 +4,7 @@ var del = require('del');
 var sass = require('gulp-sass');
 var shell = require('gulp-shell');
 
-//support dist files through cdn.  
+//support dist files through cdn.
 
 gulp.task('clean', function () {
   return del(['./build/*']);
@@ -23,8 +23,8 @@ gulp.task('sass', function () {
               .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('watch', ['copy', 'sass'], function () {
-  gulp.watch(['./examples/**/*.{scss,sass}'], ['sass']);
+gulp.task('watch', ['copy'], function () {
+  // gulp.watch(['./examples/**/*.{scss,sass}'], ['sass']);
   gulp.watch(['./examples/index.html'], ['copy']);
 });
 
